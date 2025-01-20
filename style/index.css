@@ -8,7 +8,8 @@
 .text-color-one {
     color: #3A3A3A;
 }
-.button-design{
+
+.button-design {
     font-size: 1rem;
     font-weight: 700;
     background-color: #E02C6D;
@@ -25,6 +26,7 @@
 .display-flex {
     display: flex;
 }
+
 /* .common-width{
     max-width: 1440px;
     margin: 0px auto; 
@@ -58,7 +60,8 @@ nav>div>ul>li {
     font-size: 1rem;
     margin-right: 34px;
 }
-.banner-container{
+
+.banner-container {
     max-width: 1440px;
     margin: 0px auto;
     justify-content: space-between;
@@ -66,29 +69,204 @@ nav>div>ul>li {
     gap: 133px;
     margin-top: 50px;
 }
-.banner-left-content{
+
+.banner-left-content {
     flex-direction: column;
     gap: 1rem;
 }
-.banner-title{
+
+.banner-title {
     font-weight: 700;
     font-size: 3.25rem;
 }
-.banner-subtitle{
+
+.banner-subtitle {
     font-size: 1rem;
     font-weight: 600;
 }
-.button-prebook{
+
+.button-prebook {
     border-radius: 41px;
 }
-.circle-img{
+
+.circle-img {
     position: absolute
 }
-.camera-img{
-    position:relative;
+
+.camera-img {
+    position: relative;
     top: 50px;
     left: 20px;
 }
+
+/* ECOMMERCE */
+
+.ecommerce-container {
+    max-width: 1110px;
+    margin: 0px auto;
+    margin-top: 125px;
+    padding: 35px 62px;
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.ecommerce-logo {
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collection-container {
+    max-width: 1047px;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+.collection-title {
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    /* background-color: #f0b9b9; */
+    padding: 17px 15px 17px 14px;
+    box-shadow: 0px 0px 40px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.card-title {
+    margin-top: 16px;
+    color: #18191F;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.card-price {
+    margin-top: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.card-rating {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #5E6366;
+}
+
+.card-description {
+    color: #787885;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.see-more-btn {
+    margin-top: 50px;
+    color: rgba(224, 44, 109, 0.87);
+    justify-content: end;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* PRODUCTS */
+
+
+.products {
+    max-width: 1047px;
+    margin: 0px auto;
+    margin-top: 100px;
+    gap: 96px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img {
+    width: 404px;
+    height: 207px;
+}
+
+.product-content {
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.product-title {
+    font-size: 2.375rem;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.product-subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6C6C6C;
+}
+
+.product-btn {
+
+
+    justify-content: start;
+    align-items: center;
+}
+
+.footer {
+
+
+    width: 100%;
+    margin-top: 100px;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.footer-content {
+    padding: 50px 589px;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.footer-subtitle,
+.footer-description {
+    color: #D9DBE1;
+    font-weight: 700;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+/* 
+.icon-circle {
+   
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    opacity: 10%;
+} */
+
+
 
 @media screen and (max-width:576px) {
 
@@ -97,49 +275,140 @@ nav>div>ul>li {
         flex-direction: column;
         text-align: center;
     }
+
     .navbar-title {
         text-align: center;
     }
-    .navbar-item{
+
+    .navbar-item {
         margin-top: 5px;
     }
-    .banner-title{
-       
+
+    .banner-title {
         text-align: center;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
         gap: 50px;
     }
-    .banner-left-content{
+
+    .banner-left-content {
         align-items: center;
         gap: 1rem;
     }
-   
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .products {
+        /* max-width: 1047px;
+        margin: 0px auto;
+        margin-top: 100px; */
+        gap: 40px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-btn {
+        justify-content: center;
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 100px;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+       
+    }
+
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
+
     .navbar,
     .navbar-items {
         flex-direction: column;
         text-align: center;
     }
+
     .navbar-title {
         text-align: center;
     }
-    .navbar-item{
+
+    .navbar-item {
         margin-top: 5px;
     }
-    .banner-title{
-       
+
+    .banner-title {
+
         text-align: center;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
         gap: 80px;
     }
-    .banner-left-content{
+
+    .banner-left-content {
         align-items: center;
         gap: 1rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .card-title {
+        margin-top: 16px;
+        color: #18191F;
+        font-weight: 600;
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .card-price {
+        margin-top: 6px;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card-rating {
+        font-weight: 700;
+        font-size: 0.875rem;
+        color: #5E6366;
+        text-align: center;
+    }
+
+    .card-description {
+        color: #787885;
+        font-weight: 700;
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .products {
+        /* max-width: 1047px;
+        margin: 0px auto;
+        margin-top: 100px; */
+        gap: 40px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-btn {
+        justify-content: center;
     }
 }
