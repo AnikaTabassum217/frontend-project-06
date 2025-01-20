@@ -215,16 +215,12 @@ nav>div>ul>li {
 }
 
 .product-btn {
-
-
     justify-content: start;
     align-items: center;
 }
 
 .footer {
-
-
-    width: 100%;
+   /* max-width: 100%; */
     margin-top: 100px;
     flex-direction: column;
     background-color: black;
@@ -254,20 +250,16 @@ nav>div>ul>li {
     white-space: nowrap;
     text-align: center;
 }
-
-
-/* 
-.icon-circle {
-   
-    background-color: white;
-    width: 32px;
-    height: 32px;
+.footer-icons{
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+}
+.footer-icon{
+    padding: 10px;
+    border: 1px solid white;
     border-radius: 50%;
-    opacity: 10%;
-} */
-
-
-
+}
 @media screen and (max-width:576px) {
 
     .navbar,
@@ -305,9 +297,6 @@ nav>div>ul>li {
     }
 
     .products {
-        /* max-width: 1047px;
-        margin: 0px auto;
-        margin-top: 100px; */
         gap: 40px;
         flex-direction: column-reverse;
         justify-content: center;
